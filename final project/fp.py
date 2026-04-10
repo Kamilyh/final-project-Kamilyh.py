@@ -1,7 +1,5 @@
 import telebot, random, os
 
-bot = telebot.TeleBot("8688464597:AAGGNGK3b2iU10u19VbL4692gR26pVcBzeM")
-
 @bot.message_handler(commands=['start', 'hello'])
 def send_welcome(message):
     bot.reply_to(message, f'Привет! Я бот {bot.get_me().first_name}!, Здесь ты сможешь узнать больщше о глобальном потеплении\nОтправь комманду /gblwarm что бы узнать больше функций')
